@@ -1,0 +1,26 @@
+GET http://localhost:4004/odata/v4/catalog/Books
+###
+
+POST  http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{
+      "ID": 5,
+      "title": "Gunalan",
+      "stock": 50,
+      "price": 16682
+}
+###
+PUT   http://localhost:4004/odata/v4/catalog/Books/5
+Content-Type: application/json
+
+{
+  "ID": 3,
+  "title": "TEDDY",
+  "stock": 50,
+  "price": 16682
+}
+
+###
+
+DELETE  http://localhost:4004/odata/v4/catalog/Books/3
