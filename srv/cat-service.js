@@ -9,7 +9,7 @@ module.exports = cds.service.impl(srv => {
      });
 
      async function capitalizename (req){
-      console.log("hello");
+//       console.log("hello");
       let db_data = "SELECT * " +
       "FROM MY_BOOKSHOP_BOOKS as header " +
       "WHERE header.ID = '" + 1 + "'";
